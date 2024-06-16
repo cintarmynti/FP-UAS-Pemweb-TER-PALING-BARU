@@ -10,7 +10,7 @@
 }
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url('benner_11.jpg');
+    background-image: url('./../img/benner_11.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@ body {
 }
 
 header {
-    background-image: url('prob\ 3.png'); /* Ganti dengan path gambar Anda */
+    background-image: url('../img/prob\ 3.png'); /* Ganti dengan path gambar Anda */
     background-size: cover; /* Mengatur ukuran gambar agar menutupi seluruh header */
     background-position: center; /* Mengatur posisi gambar di tengah */
     background-repeat: no-repeat; /* Mencegah pengulangan gambar */

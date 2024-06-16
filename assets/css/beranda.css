@@ -6,7 +6,7 @@
 
 body{
 font-family: 'Montserrat', sans-serif;
-background-image: url(Image/background.jpg);
+background-image: url('./../../Image/background.jpg');
 }
 
 
@@ -26,7 +26,6 @@ background-image: url(Image/background.jpg);
     justify-content: center;
     align-items: center;
     height: 100vh; /* Adjust the height as needed */
-    background-image: url('path_to_background_image.jpg'); /* Add your background image */
     background-size: cover;
     background-position: center;
     text-align: center;
