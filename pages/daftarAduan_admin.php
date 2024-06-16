@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Aduan</title>
-    <link rel="stylesheet" href="admin_style.css">
+    <link rel="stylesheet" href="../assets/css/admin_style.css">
 </head>
 <body>
     <header>
         <div class="header-container">
             <div class="header-left">
-                <img src="Image/Logo Kota Probolinggo.png" class="header-img" alt="Logo Kota Probolinggo">
+                <img src="./../Image/Logo Kota Probolinggo.png" class="header-img" alt="Logo Kota Probolinggo">
                 <h1>AdMas-Pro</h1>
                 <p>Portal Aduan Masyarakat Probolinggo</p>
             </div>
@@ -42,7 +42,7 @@
     </div>
 
     <div class="back-dashboard">
-        <a href="admin_dashboard.html">Kembali</a>
+        <a href="./admin_dashboard.php">Kembali</a>
     </div>
 
     <script>
@@ -77,7 +77,7 @@
                     <td>${aduan.tanggal}</td>
                     <td>${aduan.judul}</td>
                     <td class="${statusClass}">${aduan.status}</td>
-                    <td><a href="detailAduan_admin.html?id=${aduan.id}">Lihat</a></td>
+                    <td><a href="detailAduan_admin.php?id=${aduan.id}">Lihat</a></td>
                 `;
                 aduanBody.appendChild(row);
             });

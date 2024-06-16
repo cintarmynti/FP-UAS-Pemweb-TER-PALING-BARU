@@ -34,8 +34,8 @@
             </div>
             <br>
             <div class="header-right">
-                <a href="index.html">Buat Aduan</a>
-                <a href="cekaduan.html">Cek Aduan</a>
+                <a href="index.php">Buat Aduan</a>
+                <a href="cekaduan.php">Cek Aduan</a>
             </div>
         </section>
     </main>
