@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background-image: url('prob\ 3.png'); /* Ganti dengan path gambar Anda */
+    background-image: url('../img/prob\ 3.png'); /* Ganti dengan path gambar Anda */
     background-size: cover; /* Mengatur ukuran gambar agar menutupi seluruh header */
     background-position: center; /* Mengatur posisi gambar di tengah */
     background-repeat: no-repeat; /* Mencegah pengulangan gambar */
@@ -267,7 +267,7 @@ p {
 }
 
 #process-section {
-    background-image: url('Image/background.jpg'); /* Ganti dengan path gambar latar belakang Anda */
+    background-image: url('./../../Image/background.jpg'); /* Ganti dengan path gambar latar belakang Anda */
     background-size: cover;
     background-position: center;
     border-radius: 10px;
