@@ -35,11 +35,11 @@
                     foreach ($aduan as $item) {
                         $class = "";
                         if ($item['status'] == 1) {
-                            $class = "history-item-1";
+                            $class = "history-item-3";
                         } elseif ($item['status'] == 2) {
                             $class = "history-item-2";
                         } elseif ($item['status'] == 3) {
-                            $class = "history-item-3";
+                            $class = "history-item-1";
                         }
                 ?>
                         <div class="<?= $class; ?>">

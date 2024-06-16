@@ -19,7 +19,17 @@
         return $query_run;
     }
 
-    
+    function getByAduan($table, $nomorAduan){
+        global $conn;
+        $query = "SELECT * FROM $table WHERE no_aduan = '$nomorAduan'";
+        $result = mysqli_query($conn, $query);
+        
+        if (!$query) {
+            die("Query error: " . mysqli_error($conn));
+        }
+        
+        return $result;
+    }
 
     function getById($table, $id){
         global $con;

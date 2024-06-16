@@ -4,6 +4,7 @@ include('../config/dbcon.php');
 include('../functions/myfunctions.php');
 if (isset($_POST['tambah_pengaduan_btn'])) {
     $nama = $_POST['nama'];
+    $judul = $_POST['judul'];
     $email = $_POST['email'];
     $tanggal = $_POST['tanggal'];
     $lokasi = $_POST['lokasi'];
@@ -13,7 +14,7 @@ if (isset($_POST['tambah_pengaduan_btn'])) {
     $random_number = rand(10000, 99999);
     $no_aduan = "ADN".$random_number;
 
-    $cate_query = "INSERT INTO pengaduan (no_aduan, nama, email, tanggal, lokasi, alamat, kategori, aduan) VALUES ('$no_aduan', '$nama', '$email', '$tanggal', '$lokasi', '$alamat', '$kategori', '$aduan')";
+    $cate_query = "INSERT INTO pengaduan (no_aduan, judul, nama, email, tanggal, lokasi, alamat, kategori, aduan) VALUES ('$no_aduan', '$judul', '$nama', '$email', '$tanggal', '$lokasi', '$alamat', '$kategori', '$aduan')";
 
     $cate_query_run = mysqli_query($conn, $cate_query);
 
