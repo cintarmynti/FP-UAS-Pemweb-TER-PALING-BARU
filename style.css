@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --skyblue : #9cd6ff;
+    --darkblue : #305abe;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('prob\ 3.png'); /* Ganti dengan path gambar Anda */
+    background-size: cover; /* Mengatur ukuran gambar agar menutupi seluruh header */
+    background-position: center; /* Mengatur posisi gambar di tengah */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    /* background-color:#1d95ea ; */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Ensure items are aligned to the start */
+    gap: 10px; /* Optional spacing between items */
+}
+.flex-item {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    margin-left: 5px;
+}
+
+.header-img{
+    width: 40px;
+    margin-left: 60px ;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-right a {
+    display: inline-block;
+    /* background-color: #1779bf; */
+    background-color: #fff;
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    width: 150px;
+}
+
+.header-right a:hover {
+    /* background-color: #023a75; */
+    background-color: #ff9100;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.header-right a:active {
+    /* background-color: #004494; */
+     background-color: #8b8d8e;
+    transform: translateY(1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.header-left {
+    text-align: left;
+}
+
+.header-right a {
+    margin-left: 1em;
+    color: #000000;
+    text-decoration: none;
+    /* font-weight: lighter; */
+}
+
+.header-right a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.icon-status{
+    width: 17%;
+    height: 13%; 
+}
+.card-aduan {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+.card-aduan .card {
+    background-color: #a7cdf7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    flex: 1;
+    margin-right: 1em;
+    text-align: center;
+    padding: 1em;
+}
+
+
+.card-aduan .card:last-child {
+    margin-right: 0;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 0.5em 0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2em;
+}
+
+.flex-item {
+    margin-right: 1em;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.radio-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.radio-container input[type="radio"] {
+    display: none;
+}
+
+.radio-label {
+    padding: 0.5em 1em;
+    border: 1px solid #ff9100;
+    border-radius: 5px;
+    margin: 0 0.5em;
+    cursor: pointer;
+    color: #000000;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.radio-label:hover {
+    background-color: #f4f4f4;
+}
+
+input[type="radio"]:checked + .radio-label {
+    /* background-color: #007BFF; */
+    background-color: #ff9100;
+    color: #ffffff;
+}
+
+.radio-container input[type="radio"]:checked + .radio-label::before {
+    content: "✔";
+    margin-right: 0.5em;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], select, textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    padding: 0.75em 1.5em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.card a {
+    display: inline-block;
+    background-color: #1779bf;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 12px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    width: 150px;
+}
+ .card a:hover {
+    background-color: #023a75;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card a:active {
+    background-color: #004494;
+    transform: translateY(1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} *
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin-top: 1em;
+}
+
+#process-section {
+    background-image: url('Image/background.jpg'); /* Ganti dengan path gambar latar belakang Anda */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 2em 0;
+    color: white; /* Mengubah warna teks agar kontras dengan latar belakang */
+    margin-top: 2em;
+}
+
+/* Gaya untuk elemen dengan kelas .process-card di dalam #process-section */
+#process-section .process-card {
+    background: rgba(0, 0, 0, 0.7); /* Transparansi untuk kartu agar tetap terlihat di atas gambar */
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#process-section .process-card:hover {
+    transform: scale(1.1); /* Efek timbul saat hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Tambahkan shadow saat hover */
+}
+
+#process-section .process-card img {
+    max-width: 30%;
+    border-radius: 10px;
+}
+
+#process-section .process-card h3 {
+    margin: 0.5em 0;
+}
+
+#process-section .process-card p {
+    font-size: 0.9em;
+}
+
+#process-section h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#status-aduan-section {
+    padding: 20px;
+}
+
+#process-section .process-card .process-img {
+    width: 10%;
+}
+.status-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.status-card {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+.aduan-diterima {
+    background-color: #ffd54f;
+}
+
+.aduan-diproses {
+    background-color: #4fc3f7;
+}
+
+.selesai {
+    background-color: #81c784;
+}
+
+
+
+
+/* HISTORY ADUAN */
+
+#history-aduan-section {
+    padding: 20px;
+}
+
+.history-container {
+    display: flex;
+}
+
+.history-item-1 {
+    border: 1px solid #000000;
+    background-color: #00ff26;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+.history-item-2{
+    border: 1px solid #000000;
+    background-color: #f2ff00;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+.history-item-3 {
+    border: 1px solid #000000;
+    background-color: #ff0000;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 10px;
+}
+

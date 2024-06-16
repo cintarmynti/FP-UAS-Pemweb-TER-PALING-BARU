@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mild_orange: #ffc06e;
+    --orange: #ff9100;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('prob 3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-left {
+    text-align: left;
+}
+
+.header-img {
+    width: 40px;
+    margin-left: 60px;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-right .admin-label {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logout-button {
+    background-color: var(--orange);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: var(--mild_orange);
+}
+
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(80vh - 150px); /* Adjust according to header height */
+    position: relative;
+    top: 50px; /* Ensure the main content is below the header */
+}
+
+.dashboard {
+    display: flex;
+    gap: 2em;
+}
+
+.dashboard-box {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    padding: 2em;
+    flex: 1;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+    position: relative;
+}
+
+.dashboard-box img {
+    max-width: 50%;
+    height: auto;
+}
+
+.dashboard-box img.box-logo-hover {
+    display: none;
+}
+
+.dashboard-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: var(--orange);
+    color: #fff;
+}
+
+.dashboard-box:hover .box-logo {
+    display: none;
+}
+
+.dashboard-box:hover .box-logo-hover {
+    display: inline-block;
+}
+
+.dashboard-box h2 {
+    margin-top: 1em;
+    transition: color 0.3s;
+}
+
+.dashboard-box:hover h2 {
+    color: #fff;
+}
+
+
+/* DAFTAR ADUAN */
+
+.back-dashboard {
+    text-align: center; /* Rata tengah tombol */
+    margin-top: 20px; /* Jarak atas tombol */
+}
+
+.back-dashboard a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9100; /* Warna tombol */
+    color: #fff; /* Warna teks */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    border-radius: 5px; /* Sudut melengkung */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animasi transisi */
+    font-size: 16px; /* Ukuran font */
+    text-align: center; /* Rata tengah */
+    margin-top: 15px; /* Jarak atas */
+}
+
+.back-dashboard a:hover {
+    background-color: #ffc06e; /* Warna tombol saat hover */
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.aduan-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.aduan-table th, .aduan-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.aduan-table th {
+    background-color: #f8f8f8;
+}
+
+.aduan-table td a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.aduan-table td a:hover {
+    text-decoration: underline;
+}
+
+/* Penambahan styling berdasarkan status aduan */
+.aduan-table td:nth-child(4) {
+    /* Kolom Status */
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.aduan-table td:nth-child(4).status-diproses {
+    color: #f0ad4e; /* Warna kuning untuk status "Diproses" */
+}
+
+.aduan-table td:nth-child(4).status-belum-diproses {
+    color: #6c757d; /* Warna abu-abu untuk status "Belum Diproses" */
+}
+
+.aduan-table td:nth-child(4).status-selesai {
+    color: #28a745; /* Warna hijau untuk status "Selesai" */
+}
