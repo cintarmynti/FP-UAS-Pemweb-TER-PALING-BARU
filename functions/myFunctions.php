@@ -8,16 +8,18 @@
     }
 
     function getAll($table){
-        global $con;
+        global $conn;
         $query = "SELECT * FROM $table";
-        $query_run = mysqli_query($con, $query);
+        $query_run = mysqli_query($conn, $query);
 
         if (!$query_run) {
-            die("Query error: " . mysqli_error($con));
+            die("Query error: " . mysqli_error($conn));
         }
         
         return $query_run;
     }
+
+    
 
     function getById($table, $id){
         global $con;

@@ -204,14 +204,29 @@ main {
     text-transform: capitalize;
 }
 
-.aduan-table td:nth-child(4).status-diproses {
-    color: #f0ad4e; /* Warna kuning untuk status "Diproses" */
+.status-diproses {
+    color: #17a2b8; /* Warna biru */
+    background-color: #d1ecf1; /* Latar belakang biru terang */
+    border: 1px solid #bee5eb; /* Border biru */
+    padding: 5px 10px; /* Padding */
+    border-radius: 5px; /* Border radius */
+    font-weight: bold; /* Teks tebal */
 }
 
-.aduan-table td:nth-child(4).status-belum-diproses {
-    color: #6c757d; /* Warna abu-abu untuk status "Belum Diproses" */
+.status-belum-diproses {
+    color: #ffc107; /* Warna kuning */
+    background-color: #fff3cd; /* Latar belakang kuning terang */
+    border: 1px solid #ffeeba; /* Border kuning */
+    padding: 5px 10px; /* Padding */
+    border-radius: 5px; /* Border radius */
+    font-weight: bold; /* Teks tebal */ /* Warna abu-abu untuk status "Belum Diproses" */
 }
 
-.aduan-table td:nth-child(4).status-selesai {
-    color: #28a745; /* Warna hijau untuk status "Selesai" */
+.status-selesai {
+    color: #28a745; /* Warna hijau */
+    background-color: #d4edda; /* Latar belakang hijau terang */
+    border: 1px solid #c3e6cb; /* Border hijau */
+    padding: 5px 10px; /* Padding */
+    border-radius: 5px; /* Border radius */
+    font-weight: bold; /* Teks tebal */
 }
