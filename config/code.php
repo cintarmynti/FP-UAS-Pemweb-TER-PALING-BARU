@@ -19,8 +19,9 @@ if (isset($_POST['tambah_pengaduan_btn'])) {
     $cate_query_run = mysqli_query($conn, $cate_query);
 
         if($cate_query_run){
-            redirect("./../index.php", "Berhasil Menambahkan pengaduan");
-
+            header("Location: ./../cekaduan_preview.php?nomorAduan=".$no_aduan);
+            exit(); 
+          
         }else{
             redirect("./../index.php", "Something went wrong");
         }

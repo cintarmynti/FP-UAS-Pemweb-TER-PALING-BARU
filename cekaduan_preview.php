@@ -18,8 +18,8 @@
                 <p>Portal Aduan Masyarakat Probolinggo</p>
             </div>
             <div class="header-right">
-                <a href="beranda.html">Beranda</a>
-                <a href="index.html">Buat Aduan</a>
+                <a href="./beranda.php">Beranda</a>
+                <a href="./index.php">Buat Aduan</a>
             </div>
         </div>
     </header>
